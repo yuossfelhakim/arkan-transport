@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Loading...</title>
+  <script>
+    sessionStorage.redirect = location.href;
+    location.replace("/arkan-transport/");
+  </script>
+</head>
+<body>
+</body>
+</html>
