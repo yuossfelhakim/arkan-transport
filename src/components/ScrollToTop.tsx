@@ -5,9 +5,12 @@ export default function ScrollToTop() {
   const { pathname } = useLocation()
 
   useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+
     window.scrollTo({
       top: 0,
-      behavior: 'instant' as ScrollBehavior // Instant scroll to prevent transition jumpiness
+      left: 0,
+      behavior: 'auto'
     })
   }, [pathname])
 
